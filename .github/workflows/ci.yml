@@ -1,0 +1,39 @@
+name: iris-ci
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install dvc[gs] pytest scikit-learn cml joblib pandas
+
+      - name: Pull data & model from DVC
+        run: dvc pull
+
+      - name: Run unit tests
+        run: pytest -v --junitxml=report.xml
+
+      - name: Create CML report
+        env:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "### ✅ Test Results" > report.md
+          pytest -v | tee -a report.md
+          cml comment create report.md
