@@ -1,0 +1,17 @@
+stages:
+  train:
+    cmd: python src/train_model.py
+    deps:
+      - data/iris.csv
+      - src/train_model.py
+    outs:
+      - model/model.pkl
+
+  predict:
+    cmd: python src/predict_model.py
+    deps:
+      - model/model.pkl
+      - data/iris.csv
+      - src/predict_model.py
+    outs:
+      - model/predictions.csv
