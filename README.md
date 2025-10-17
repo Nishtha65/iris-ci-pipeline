@@ -56,13 +56,3 @@ ci.yml file defines automatic testing and validation using GitHub Actions.
 
 On each commit, workflows ensure model reproducibility and data consistency.
 
-Requirements
-Python 3.11+
-
-DVC
-
-scikit-learn
-
-pandas
-
-pytest
