@@ -1,0 +1,10 @@
+artifact_location: file:///home/riteshnkumar261/iris-ci-pipeline/mlruns/769714256518404835/models/m-4ebbd51caa5e47cbbc581626454787be/artifacts
+creation_timestamp: 1762945607926
+experiment_id: '769714256518404835'
+last_updated_timestamp: 1762945610782
+model_id: m-4ebbd51caa5e47cbbc581626454787be
+model_type: null
+name: model
+source_run_id: 7c7b97983c6d42f993326dc60d5e48f3
+status: 2
+status_message: null

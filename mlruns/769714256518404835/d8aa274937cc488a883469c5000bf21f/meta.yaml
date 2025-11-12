@@ -1,0 +1,14 @@
+artifact_uri: file:///home/riteshnkumar261/iris-ci-pipeline/mlruns/769714256518404835/d8aa274937cc488a883469c5000bf21f/artifacts
+end_time: 1762946687167
+entry_point_name: ''
+experiment_id: '769714256518404835'
+lifecycle_stage: active
+run_id: d8aa274937cc488a883469c5000bf21f
+run_name: feature_5pct
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762946683786
+status: 3
+tags: []
+user_id: riteshnkumar261

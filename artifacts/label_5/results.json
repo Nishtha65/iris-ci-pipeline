@@ -1,0 +1,11 @@
+{
+  "poison_type": "label",
+  "poison_frac": 0.05,
+  "test_accuracy": 0.9,
+  "val_accuracy": 0.9166666666666666,
+  "test_precision": 0.9023569023569024,
+  "test_recall": 0.9,
+  "test_f1": 0.899749373433584,
+  "n_train_total": 120,
+  "n_poisoned": 6
+}

@@ -1,0 +1,6 @@
+artifact_location: file:///home/riteshnkumar261/iris-ci-pipeline/mlruns/769714256518404835
+creation_time: 1762945599876
+experiment_id: '769714256518404835'
+last_update_time: 1762945599876
+lifecycle_stage: active
+name: iris-poisoning-study
