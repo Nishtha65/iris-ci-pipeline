@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iris-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: iris
+  template:
+    metadata:
+      labels:
+        app: iris
+    spec:
+      containers:
+      - name: iris-container
+        image: iris-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
